@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+   <html>
+        <head>
+           <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Bisbee African Adventures</title>
+          <link rel="stylesheet" href="home style.css">
+          <link rel="icon" href="Matopos Logo.png" type="image/png">
+        </head>
+        <body>
+            <header>
+              <nav class="navbar">
+                <div class="logo">Bisbee African Adventures</div>
+                <ul class="nav-links">
+                  <li><a href="BAA Home.html">Home</a></li>
+                  <li><a href="BAA About.html">About</a></li>
+                  <li><a href="BAA Experiences.html">Experiences</a></li>
+                  <li><a href="BAA Gallery.html">Gallery</a></li>
+                  <li><a href="BAA Book Now.html" class="book-now">Book Now</a></li>
+                </ul>
+              </nav>
+              <div class="slideshow-container">
+                <div class="slide fade">
+                  <img src="Images/Matopos.jpg" alt="Adventure 1">
+                </div>
+                <div class="slide fade">
+                  <img src="Images/Giraffe.jpg" alt="Adventure 2">
+                </div>
+                <div class="slide fade">
+                  <img src="Images/Zebra.jpg" alt="Adventure 3">
+                </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+          </header>
+          <main>
+              <h1>Welcome to Bisbee African Adventures</h1>
+              <p>Discover unforgettable bushveld and conservation experiences in the heart of Africa.</p>
+
+                <section class="mission-section">
+                  <div class="mission-content">
+                  <img src="Images/Bushbuck.jpg" alt="Our Mission" class="mission-image">
+                <div class="mission-text">
+                  <h2>What We Aim to Achieve</h2>
+                    <p>
+                    Our goal is to create a healthy environment for the animals that reside on Matopos, allowing for ethical breeding and educational programs. 
+                    We are passionate about animals and teaching people about the natural world. and we strive to make a meaningful impact through our work, community,
+                    and creativity.
+                    </p>
+                  </div>
+                </div>
+              </section>
+          </main>
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+            slides[slideIndex - 1].style.display = "block";
+          }
+          </script>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Bisbee African Adventures. All rights reserved.</p>
+      <a href="https://instagram.com/bisbee_african_adventures" target="_blank" class="insta-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="insta-icon">
+        @bisbee_african_adventures
+      </a>
+    </div>
+  </footer>
+        </body>
+   </html>
